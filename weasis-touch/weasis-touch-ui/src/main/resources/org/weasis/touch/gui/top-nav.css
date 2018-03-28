@@ -1,0 +1,48 @@
+VBox {
+    -fx-background-color: #000000;
+    -fx-margin-top: 1em;
+}
+
+.menu .label {
+    -fx-text-fill: #eeeeee
+}
+
+.menu:hover{
+    -fx-background-color: #333333;
+}
+
+.menu:showing, .menu:focused {
+    -fx-background-color: #333333;
+}
+
+.menu-bar {
+    -fx-background-color: #212121;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.menu-bar:focused {
+    -fx-background-color: #333333;
+}
+
+.menu-item .label {
+    -fx-text-fill: #eeeeee
+}
+
+.menu-item {
+    -fx-padding: 0.3em 2em 0.3em 2em;
+}
+
+.menu-item:focused {
+     -fx-background-color:#4f4f4f;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #f1f1f1
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #333333;
+    -fx-background-insets: 0, 1, 2;
+    -fx-padding: 0em 0em 0em 0em;
+}
