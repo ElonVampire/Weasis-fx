@@ -256,14 +256,14 @@ public class MenuController {
         this.rootPane = (AnchorPane) scene.getRoot();
         scene.widthProperty().addListener((ChangeListener<Object>) (o, oldVal, newVal) -> {
             menuGroup.setLayoutX((double) newVal - (menuGroup.getBoundsInLocal().getWidth()
-                - (menuGroup.getBoundsInLocal().getWidth() - menuGroup.getBoundsInLocal().getMaxX())) - 7);
+                - (menuGroup.getBoundsInLocal().getWidth() - menuGroup.getBoundsInLocal().getMaxX())) - 7 -200);
         });
         scene.heightProperty().addListener((ChangeListener<Object>) (o, oldVal, newVal) -> {
             menuGroup
                 .setLayoutY((double) newVal
                     - (menuGroup.getBoundsInLocal().getHeight()
                         - (menuGroup.getBoundsInLocal().getHeight() - menuGroup.getBoundsInLocal().getMaxY()))
-                    - 7 - 600);
+                    - 7 - 750);
         });
     }
 
