@@ -59,7 +59,7 @@ public class TutorialCanvas extends AnchorPane {
             if (prefs.getBoolean(WeasisPreferences.SHOW_TUTO.name(),
                 (Boolean) WeasisPreferences.SHOW_TUTO.defaultValue())) {
                 if ((Double) newValue >= 488) {
-                    drawTutorial();
+                    //drawTutorial();
                 } else {
                     clear();
                 }
@@ -70,13 +70,13 @@ public class TutorialCanvas extends AnchorPane {
             if (prefs.getBoolean(WeasisPreferences.SHOW_TUTO.name(),
                 (Boolean) WeasisPreferences.SHOW_TUTO.defaultValue())) {
                 if ((Double) newValue >= 422) {
-                    drawTutorial();
+                    //drawTutorial();
                 } else {
                     clear();
                 }
             }
         });
-
+/*
         try {
             FXMLLoader loaderGestureTutorial = new FXMLLoader();
             loaderGestureTutorial.setResources(Messages.RESOURCE_BUNDLE);
@@ -92,7 +92,7 @@ public class TutorialCanvas extends AnchorPane {
             LOGGER.error("Load tutorial", e);
         }
 
-        drawTutorial();
+        drawTutorial();  */
     }
 
     public void clear() {
