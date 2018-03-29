@@ -1,4 +1,4 @@
-.titled-pane > .title {
+/*.titled-pane > .title {
     -fx-pref-height: 40.0;
     -fx-alignment: baseline-left;
     -fx-focus-color: transparent;
@@ -8,4 +8,18 @@
 .titled-pane:focused > .title > .arrow-button .arrow 
 {
 	-fx-background-color: #b34711;
+}*/
+
+
+.titled-pane > .title {
+    -fx-pref-height: 40.0;
+    -fx-alignment: baseline-left;
+    -fx-focus-color: transparent;
+    -fx-text-fill: white;
+}
+
+
+.titled-pane:focused > .title > .arrow-button .arrow
+{
+	-fx-background-color: #212121;
 }

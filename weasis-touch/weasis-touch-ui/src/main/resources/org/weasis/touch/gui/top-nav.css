@@ -1,6 +1,5 @@
 VBox {
     -fx-background-color: #000000;
-    -fx-margin-top: 1em;
 }
 
 .menu .label {
@@ -16,7 +15,7 @@ VBox {
 }
 
 .menu-bar {
-    -fx-background-color: #ff6600;
+    -fx-background-color: #212121;
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
 }
 
