@@ -1,0 +1,31 @@
+ToolBar {
+    -fx-background-color: #000000;
+    -fx-padding: 0em 0em 0em 0em;
+}
+
+.toggle-button {
+    -fx-background-color: #000000;
+    -fx-padding: 1em 1em 1em 1em;
+    -fx-margin: 0em 0em 0em 0em;
+    -fx-background-radius: 0 0 0 0;
+}
+
+.toggle-button:focused {
+    -fx-background-color:#212121;
+}
+
+.toggle-button:hover {
+    -fx-background-color: #2e2e2e;
+}
+
+#toggleBtnPan {  
+    -fx-graphic: url('../img/ic_3d_rotation_white_24dp_1x.png');
+}
+
+#toggleBtnRotate {  
+    -fx-graphic: url('../img/ic_3d_rotation_white_24dp_1x.png');
+}
+
+#toggleBtnZoom {  
+    -fx-graphic: url('../img/ic_3d_rotation_white_24dp_1x.png');
+}
