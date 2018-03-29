@@ -24,6 +24,9 @@ import javax.sound.sampled.AudioFormat.Encoding;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 
+import javafx.scene.control.MenuItem;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.Stage;
 import org.dcm4che3.data.Attributes;
 import org.dcm4che3.data.BulkData;
 import org.dcm4che3.data.Tag;
@@ -35,11 +38,14 @@ import org.weasis.core.api.media.data.MediaElement;
 import org.weasis.core.api.media.data.MediaSeries;
 import org.weasis.core.api.media.data.SeriesThumbnail;
 import org.weasis.core.api.media.data.TagW;
+import org.weasis.core.api.service.BundlePreferences;
 import org.weasis.core.ui.editor.MimeSystemAppViewer;
 import org.weasis.dicom.codec.DicomImageElement;
 import org.weasis.dicom.codec.DicomMediaIO;
 import org.weasis.dicom.codec.DicomSpecialElement;
 import org.weasis.dicom.codec.FilesExtractor;
+import org.weasis.dicom.explorer.DicomModel;
+import org.weasis.dicom.explorer.LoadLocalDicom;
 import org.weasis.touch.Messages;
 import org.weasis.touch.WeasisPreferences;
 
@@ -69,6 +75,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
 import javafx.util.Duration;
+import org.weasis.touch.internal.MainWindowListener;
 
 public class MainViewController {
     private static final Logger LOGGER = LoggerFactory.getLogger(MainViewController.class);
@@ -127,6 +134,8 @@ public class MainViewController {
     private AnchorPane left;
     @FXML
     private AnchorPane right;
+    @FXML
+    private MenuItem btnOpenFile;
 
     private Preferences prefs;
     private MenuController menu;
@@ -135,6 +144,7 @@ public class MainViewController {
     private Node node;
     private AudioListenerController audioListenerController = null;
     private VideoViewerController videoViewerController = null;
+    private Stage stage;
 
     private Timeline t;
 
@@ -184,6 +194,27 @@ public class MainViewController {
         KeyFrame kf = new KeyFrame(Duration.millis(1), kv);
         t = new Timeline();
         t.getKeyFrames().add(kf);
+
+        btnOpenFile.setOnAction(event -> {
+            openFile();
+        });
+    }
+
+    private void openFile() {
+        DirectoryChooser directoryChooser = new DirectoryChooser();
+        directoryChooser.setTitle(Messages.getString("WeasisTouchMenu.openTitle"));
+        File file = directoryChooser.showDialog(stage);
+
+        if (file == null) {
+            LOGGER.trace("no file to open (file == null)");
+        } else {
+            MainWindowListener listener =
+                    BundlePreferences.getService(AppProperties.getBundleContext(), MainWindowListener.class);
+            if (listener != null) {
+                LoadLocalDicom dicom = new LoadLocalDicom(new File[] { file }, true, listener.getModel());
+                DicomModel.LOADING_EXECUTOR.execute(dicom);
+            }
+        }
     }
 
     public void setParam(MenuController menu) {

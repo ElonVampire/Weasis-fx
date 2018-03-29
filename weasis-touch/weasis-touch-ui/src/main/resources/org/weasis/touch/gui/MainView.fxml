@@ -17,7 +17,7 @@
                <menus>
                   <Menu id="menuFile" mnemonicParsing="false" text="Fichier">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Ouvrir un dossier DICOM" />
+                        <MenuItem mnemonicParsing="false" text="Ouvrir un dossier DICOM" fx:id="btnOpenFile" />
                         <MenuItem mnemonicParsing="false" text="Paramètres" />
                         <MenuItem mnemonicParsing="false" text="Quitter" />
                      </items>
