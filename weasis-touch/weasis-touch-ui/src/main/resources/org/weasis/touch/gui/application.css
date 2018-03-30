@@ -2,10 +2,10 @@
 /* The main scrollbar **track** CSS class  */
 .scroll-bar:horizontal .track,
 .scroll-bar:vertical .track{
-	-fx-background-color:transparent;
+	-fx-background-color:#2e2e2e;
 	-fx-border-color:transparent;
-	-fx-background-radius: 2em;
-	-fx-border-radius:2em;
+	-fx-background-radius: 1em;
+	-fx-border-radius:1em;
 }
 
 .scroll-bar {
@@ -16,7 +16,7 @@
 /* The increment and decrement button CSS class of scrollbar */
 .scroll-bar:horizontal .increment-button ,
 .scroll-bar:horizontal .decrement-button {
-    -fx-background-color:transparent;
+    -fx-background-color:orange;
 	-fx-background-radius: 0em;
 	-fx-padding:0 0 20 0;
 
