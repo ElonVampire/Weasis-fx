@@ -28,7 +28,7 @@ public class SeriesNode extends VBox {
     public SeriesNode(SeriesThumbnail thumbnail) {
         this.thumbnail = Objects.requireNonNull(thumbnail);
         this.maxWidthProperty().bind(thumbnail.widthProperty());
-        this.setStyle(
+        this.setStyle("-fx-text-fill: white;"+
                 "-fx-background-color: #212121;"
                         + "-fx-background-insets: 0 0 -1 0, 0, 1, 2;" + "-fx-background-radius: 3px, 3px, 2px, 1px;");
 
@@ -39,6 +39,7 @@ public class SeriesNode extends VBox {
 
         Label l = new Label(TagD.getTagValue(thumbnail.getSeries(), Tag.SeriesDescription, String.class));
         l.setFont(font);
+        l.setStyle("-fx-text-fill: white;");
         l.maxWidthProperty().bind(thumbnail.widthProperty());
         ObservableValueBase<String> observable = new ObservableValueBase<String>() {
 
@@ -57,7 +58,7 @@ public class SeriesNode extends VBox {
             if (!loader.isDone() && loader.isWriteInCache()) {
                 ProgressIndicator p = new ProgressIndicator();
                 p.setMaxSize(50, 50);
-                p.setStyle("-fx-background-color: #212121;");
+                p.setStyle("-fx-background-color: #212121;"+"-fx-text-fill: white;");
                 loader.setOnSucceeded(event -> p.setVisible(false));
                 p.progressProperty().bind(loader.progressProperty());
                 stack.getChildren().add(p);
