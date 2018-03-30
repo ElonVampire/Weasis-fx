@@ -25,7 +25,7 @@
                 <SVGPath fx:id="exitMeasureSVG" content="M7.1,12.6 L8.5,14 L13.5,9 L8.5,4 L7.1,5.4 L9.7,8 L0,8 L0,10 L9.7,10 L7.1,12.6 L7.1,12.6 Z M16,0 L2,0 C0.9,0 0,0.9 0,2 L0,6 L2,6 L2,2 L16,2 L16,16 L2,16 L2,12 L0,12 L0,16 C0,17.1 0.9,18 2,18 L16,18 C17.1,18 18,17.1 18,16 L18,2 C18,0.9 17.1,0 16,0 L16,0 Z" fill="#b34711" scaleX="2.5" scaleY="2.5" BorderPane.alignment="CENTER" />
             </center>
         </BorderPane>
-        <GridPane fx:id="menu" hgap="10.0" style="-fx-background-color: black; -fx-border-color: black;" vgap="10.0">
+        <GridPane fx:id="menu" hgap="10.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" vgap="10.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
