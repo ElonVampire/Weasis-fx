@@ -28,8 +28,8 @@ public class SeriesNode extends VBox {
     public SeriesNode(SeriesThumbnail thumbnail) {
         this.thumbnail = Objects.requireNonNull(thumbnail);
         this.maxWidthProperty().bind(thumbnail.widthProperty());
-        this.setStyle("-fx-padding: 3;"
-            + "-fx-background-color: -fx-shadow-highlight-color,-fx-outer-border,-fx-inner-border,-fx-body-color;"
+        this.setStyle(
+            "-fx-background-color: -fx-shadow-highlight-color,-fx-outer-border,-fx-inner-border,-fx-body-color;"
             + "-fx-background-insets: 0 0 -1 0, 0, 1, 2;" + "-fx-background-radius: 3px, 3px, 2px, 1px;");
 
         StackPane stack = new StackPane();
