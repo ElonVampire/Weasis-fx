@@ -747,7 +747,7 @@ public class MenuController {
             LOGGER.error("Load settings", e);
         }
 
-        ftMenuHide.playFromStart();
+        //ftMenuHide.playFromStart();
     }
 
     public void hideSettings() {
@@ -857,9 +857,9 @@ public class MenuController {
         if (byteLut != null) {
             canvas.setLut(byteLut);
         }
-        if (menu.isVisible() && ftMenuHide.getCurrentRate() == 0.0d) {
-            ftMenuHide.playFromStart();
-        }
+       // if (menu.isVisible() && ftMenuHide.getCurrentRate() == 0.0d) {
+       //     ftMenuHide.playFromStart();
+       // }
         menuWindowLevelController.closeWindowLevel();
         if (lutGrid.isVisible() && ftLutHide.getCurrentRate() == 0.0d) {
             ftLutHide.playFromStart();
