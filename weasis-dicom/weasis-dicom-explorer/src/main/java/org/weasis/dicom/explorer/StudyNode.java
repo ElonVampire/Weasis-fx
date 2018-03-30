@@ -26,7 +26,7 @@ public class StudyNode extends TilePane {
         } else {
             title = TagUtil.formatDateTime(studyDate);
         }
-        this.titleNode = Borders.wrap(this).lineBorder().color(Color.web("#b34711")).thickness(2).title(title).outerPadding(7).innerPadding(7).buildAll();
+        this.titleNode = Borders.wrap(this).lineBorder().color(Color.web("#ff6600")).thickness(2).title(title).outerPadding(7).innerPadding(7).buildAll();
     }
 
     public MediaSeriesGroup getStudy() {

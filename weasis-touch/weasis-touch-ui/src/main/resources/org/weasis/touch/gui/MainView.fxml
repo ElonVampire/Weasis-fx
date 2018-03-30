@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.shape.SVGPath?>
 
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
 <StackPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.weasis.touch.gui.MainViewController">
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0">
@@ -17,8 +23,8 @@
                <menus>
                   <Menu id="menuFile" mnemonicParsing="false" text="Fichier">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Ouvrir un dossier DICOM" fx:id="btnOpenFile" />
-                        <MenuItem mnemonicParsing="false" text="Paramètres" />
+                        <MenuItem fx:id="btnOpenFile" mnemonicParsing="false" text="Ouvrir un dossier DICOM" />
+                        <MenuItem fx:id="btnSettings" mnemonicParsing="false" text="Paramètres" />
                         <MenuItem mnemonicParsing="false" text="Quitter" />
                      </items>
                   </Menu>
@@ -31,13 +37,13 @@
                </menus>
             </MenuBar>
          </top>
-         <center>
-            <AnchorPane style="-fx-background-color: red;" fx:id="mainViewPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <AnchorPane fx:id="mainViewPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER">
                <children>
                   <SplitPane fx:id="mainSplitPane" dividerPositions="0.1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <items>
                         <AnchorPane fx:id="left" maxHeight="-Infinity" minHeight="-Infinity" minWidth="240.0" style="-fx-background-color: orange;" SplitPane.resizableWithParent="false" />
-                        <AnchorPane fx:id="right" style="-fx-background-color: black;" SplitPane.resizableWithParent="true"/>
+                        <AnchorPane fx:id="right" style="-fx-background-color: black;" SplitPane.resizableWithParent="true" />
                      </items>
                   </SplitPane>
                   <BorderPane fx:id="closeThumbnail" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
@@ -47,7 +53,7 @@
                   </BorderPane>
                </children>
             </AnchorPane>
-         </center>
+         </bottom>
       </BorderPane>
    </children>
 </StackPane>

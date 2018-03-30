@@ -57,7 +57,7 @@ public class SeriesNode extends VBox {
             if (!loader.isDone() && loader.isWriteInCache()) {
                 ProgressIndicator p = new ProgressIndicator();
                 p.setMaxSize(50, 50);
-                p.setStyle("-fx-background-color: #D3D3D3;");
+                p.setStyle("-fx-background-color: #212121;");
                 loader.setOnSucceeded(event -> p.setVisible(false));
                 p.progressProperty().bind(loader.progressProperty());
                 stack.getChildren().add(p);

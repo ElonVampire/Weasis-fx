@@ -136,6 +136,8 @@ public class MainViewController {
     private AnchorPane right;
     @FXML
     private MenuItem btnOpenFile;
+    @FXML
+    private MenuItem btnSettings;
 
     private Preferences prefs;
     private MenuController menu;
@@ -145,6 +147,8 @@ public class MainViewController {
     private AudioListenerController audioListenerController = null;
     private VideoViewerController videoViewerController = null;
     private Stage stage;
+    private AnchorPane rootPane;
+    private Node setting;
 
     private Timeline t;
 
@@ -155,8 +159,8 @@ public class MainViewController {
 
         prefs = Preferences.userRoot().node(SettingsController.class.getName());
 
-        closeThumbnail.setOnMouseClicked(this::handleOnClickedCloseThumbnail);
-        closeThumbnail.setOnTouchReleased(this::handleOnReleasedCloseThumbnail);
+        /*closeThumbnail.setOnMouseClicked(this::handleOnClickedCloseThumbnail);
+        closeThumbnail.setOnTouchReleased(this::handleOnReleasedCloseThumbnail);*/
 
         initHideShow();
 
@@ -168,7 +172,7 @@ public class MainViewController {
             }
         });
 
-        closeThumbnail.setOnMouseEntered(e -> {
+        /*closeThumbnail.setOnMouseEntered(e -> {
             if (!e.isSynthesized() && !lockedProperty.get()) {
                 closeThumbnail.setScaleX(closeThumbnail.getScaleX() + 0.1);
                 closeThumbnail.setScaleY(closeThumbnail.getScaleY() + 0.1);
@@ -183,14 +187,14 @@ public class MainViewController {
             e.consume();
         });
         left.setPrefWidth(240);
-        left.setMinWidth(240);
+        left.setMinWidth(240);*/
 
         this.right.setOnDragOver(this::handleOnDragOver);
         this.right.setOnDragEntered(this::handleOnDragEntered);
         this.right.setOnDragExited(this::handleOnDragExited);
         this.right.setOnDragDropped(this::handleOnDragDropped);
 
-        KeyValue kv = new KeyValue(mainSplitPane.getDividers().get(0).positionProperty(), 0.79);
+        KeyValue kv = new KeyValue(mainSplitPane.getDividers().get(0).positionProperty(), 0.90);
         KeyFrame kf = new KeyFrame(Duration.millis(1), kv);
         t = new Timeline();
         t.getKeyFrames().add(kf);
@@ -198,7 +202,37 @@ public class MainViewController {
         btnOpenFile.setOnAction(event -> {
             openFile();
         });
+
+        btnSettings.setOnAction(event -> {
+            //ssettings();
+        });
     }
+
+    private void settings() {
+
+        blurProperty.setValue(true);
+        try {
+            FXMLLoader loaderSettings = new FXMLLoader();
+            loaderSettings.setResources(Messages.RESOURCE_BUNDLE);
+            loaderSettings.setLocation(this.getClass().getResource("SettingsView.fxml"));
+            loaderSettings.setClassLoader(this.getClass().getClassLoader());
+            setting = loaderSettings.load();
+            SettingsController settingsController = loaderSettings.getController();
+
+            if (!this.rootPane.getChildren().contains(setting)) {
+                this.rootPane.getChildren().add(setting);
+                settingsController.loadFirstPage();
+            }
+        } catch (IOException e) {
+            LOGGER.error("Load settings", e);
+        }
+    }
+
+    public void hideSettings() {
+        blurProperty.setValue(false);
+        this.rootPane.getChildren().remove(setting);
+    }
+
 
     private void openFile() {
         DirectoryChooser directoryChooser = new DirectoryChooser();
@@ -208,8 +242,7 @@ public class MainViewController {
         if (file == null) {
             LOGGER.trace("no file to open (file == null)");
         } else {
-            MainWindowListener listener =
-                    BundlePreferences.getService(AppProperties.getBundleContext(), MainWindowListener.class);
+            MainWindowListener listener = BundlePreferences.getService(AppProperties.getBundleContext(), MainWindowListener.class);
             if (listener != null) {
                 LoadLocalDicom dicom = new LoadLocalDicom(new File[] { file }, true, listener.getModel());
                 DicomModel.LOADING_EXECUTOR.execute(dicom);
@@ -330,7 +363,7 @@ public class MainViewController {
         if (!flagThumbnailShow) {
             left.setMinWidth(240);
             if (divider != null) {
-                divider.setStyle("-fx-padding: 3;");
+                divider.setStyle("-fx-padding: 0; -fx-background-color: #212121;");
             }
         } else {
             if (divider != null) {
