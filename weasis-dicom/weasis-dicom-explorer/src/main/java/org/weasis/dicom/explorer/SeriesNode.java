@@ -29,14 +29,14 @@ public class SeriesNode extends VBox {
         this.thumbnail = Objects.requireNonNull(thumbnail);
         this.maxWidthProperty().bind(thumbnail.widthProperty());
         this.setStyle(
-            "-fx-background-color: -fx-shadow-highlight-color,-fx-outer-border,-fx-inner-border,-fx-body-color;"
-            + "-fx-background-insets: 0 0 -1 0, 0, 1, 2;" + "-fx-background-radius: 3px, 3px, 2px, 1px;");
+                "-fx-background-color: #212121;"
+                        + "-fx-background-insets: 0 0 -1 0, 0, 1, 2;" + "-fx-background-radius: 3px, 3px, 2px, 1px;");
 
         StackPane stack = new StackPane();
         stack.getChildren().add(thumbnail);
         stack.setAlignment(Pos.BOTTOM_RIGHT);
         this.getChildren().add(stack);
-        
+
         Label l = new Label(TagD.getTagValue(thumbnail.getSeries(), Tag.SeriesDescription, String.class));
         l.setFont(font);
         l.maxWidthProperty().bind(thumbnail.widthProperty());

@@ -5,19 +5,19 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
 
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.layout.VBox?>
 <StackPane fx:id="mainPane" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.weasis.touch.gui.MainViewController">
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0">
          <top>
-            <MenuBar stylesheets="@top-nav.css" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" BorderPane.alignment="CENTER">
+            <MenuBar style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" stylesheets="@top-nav.css" BorderPane.alignment="CENTER">
                <menus>
                   <Menu id="menuFile" mnemonicParsing="false" text="Fichier">
                      <items>
@@ -38,9 +38,9 @@
          <center>
             <AnchorPane fx:id="mainViewPane" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER">
                <children>
-                  <SplitPane fx:id="mainSplitPane" dividerPositions="0.1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <SplitPane fx:id="mainSplitPane" stylesheets="@splitpane.css" dividerPositions="0.5" maxWidth="-Infinity" minWidth="-Infinity" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <items>
-                        <AnchorPane fx:id="left" maxHeight="1.7976931348623157E308" maxWidth="240.0" minHeight="-Infinity" minWidth="240.0" style="-fx-background-color: #212121;" SplitPane.resizableWithParent="false">
+                        <AnchorPane fx:id="left" maxHeight="1.7976931348623157E308" maxWidth="240.0" minHeight="-Infinity" minWidth="240.0" style="-fx-background-color: #212121;" SplitPane.resizableWithParent="true">
                            <VBox prefHeight="400.0" BorderPane.alignment="CENTER">
                               <children>
                                  <ImageView fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
