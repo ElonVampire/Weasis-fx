@@ -694,7 +694,8 @@ public class MenuController {
 
             lutGrid.add(new InvertLUTToggleButton(canvas), index % MAX_COLUMN, index / MAX_COLUMN);
 
-            lutGrid.setLayoutY((-50) * nbRow - 15.0);
+            lutGrid.setLayoutY(25);
+            lutGrid.setLayoutX(650);
         }
     }
 
