@@ -91,7 +91,7 @@ public class ScrollController {
             if (evt.getKey().equals(WeasisPreferences.HIDE_SHOW_SCROLL.name())) {
                 Boolean newVal = Boolean.valueOf(evt.getNewValue());
                 if (newVal) {
-                    ftHide.setToValue(0.2);
+                    ftHide.setToValue(0.6);
                     scrollBar.setOpacity(0.2);
                 } else {
                     ftHide.setToValue(0);
@@ -125,8 +125,8 @@ public class ScrollController {
     public void setValue(int val) {
         if (prefs.getBoolean(WeasisPreferences.HIDE_SHOW_SCROLL.name(),
             (Boolean) WeasisPreferences.HIDE_SHOW_SCROLL.defaultValue())) {
-            ftHide.setToValue(0.2);
-            scrollBar.setOpacity(0.2);
+            ftHide.setToValue(0.4);
+            scrollBar.setOpacity(0.4);
         } else {
             ftHide.setToValue(0);
             scrollBar.setOpacity(0);
