@@ -4,9 +4,9 @@
 <?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.shape.Rectangle?>
 
-<Group fx:id="scrollbarGroup" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.weasis.touch.gui.ScrollController">
+<Group fx:id="scrollbarGroup" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.weasis.touch.gui.ScrollController">
    <children>
-      <Rectangle fx:id="zoneScrollVirtual" arcHeight="5.0" arcWidth="5.0" height="200.0" strokeType="INSIDE" style="-fx-background-color: #212121;" width="100.0" />
+      <Rectangle fx:id="zoneScrollVirtual" arcHeight="5.0" arcWidth="5.0" height="200.0" strokeType="INSIDE" style="-fx-background-color: #2e2e2e;" width="100.0" />
       <ScrollBar fx:id="scrollBar" blockIncrement="1.0" disable="true" layoutX="40.0" layoutY="50.0" max="0.0" min="0.0" orientation="VERTICAL" stylesheets="@application.css" visibleAmount="1.0">
       </ScrollBar>
    </children>
