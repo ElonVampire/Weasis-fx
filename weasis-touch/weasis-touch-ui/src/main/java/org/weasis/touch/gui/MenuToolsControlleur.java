@@ -218,6 +218,9 @@ public class MenuToolsControlleur {
                     this.menuController.showHideMeasure.setDisable(false);
                 }
                 menuController.toolsGrid.setVisible(true);
+
+                menuController.toolsGrid.setLayoutY(25);
+                menuController.toolsGrid.setLayoutX(650);
                 ftToolsShow.playFromStart();
             }
         } else {

@@ -253,7 +253,8 @@ public class MenuWindowLevelController {
                 menuController.contrasteGrid.add(bp, index % MAX_COLUMN, index / MAX_COLUMN);
                 index++;
             }
-            menuController.contrasteGrid.setLayoutY((-50) * nbRow - 15);
+            menuController.contrasteGrid.setLayoutY(25);
+            menuController.contrasteGrid.setLayoutX(650);
 
             for (Node presetContraste : menuController.contrasteGrid.getChildren()) {
                 if ((PresetWindowLevel) canvas.getActionValue(ActionW.PRESET.cmd()) != null) {
