@@ -554,7 +554,7 @@ public class MenuController {
                 loaderConfirmation.setClassLoader(this.getClass().getClassLoader());
                 confirmation = loaderConfirmation.load();
                 ConfirmationController confirmationController = loaderConfirmation.getController();
-                confirmationController.setType(ConfirmationController.TYPE_EXIT, this);
+                confirmationController.setType(ConfirmationController.TYPE_EXIT, this, null);
 
                 if (!this.rootPane.getChildren().contains(confirmation)) {
                     this.rootPane.getChildren().add(confirmation);
@@ -590,7 +590,7 @@ public class MenuController {
                     loaderConfirmation.setClassLoader(this.getClass().getClassLoader());
                     confirmation = loaderConfirmation.load();
                     ConfirmationController confirmationController = loaderConfirmation.getController();
-                    confirmationController.setType(ConfirmationController.TYPE_RESET, this);
+                    confirmationController.setType(ConfirmationController.TYPE_RESET, this, null);
 
                     if (!this.rootPane.getChildren().contains(confirmation)) {
                         this.rootPane.getChildren().add(confirmation);

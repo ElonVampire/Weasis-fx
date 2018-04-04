@@ -35,7 +35,7 @@ public class MenuWindowLevelController {
     // Style for menu
     private static final String BORDER = "-fx-border-color:#b34711;-fx-border-width:3;";
     private static final String NO_BORDER = "-fx-border-color:none;";
-    private static final String UNSELECTED_BACKGROUND_COLOR = "-fx-background-color:#00000022;";
+    private static final String UNSELECTED_BACKGROUND_COLOR = "-fx-background-color:#ff6600;";
     private static final String SELECTED_BACKGROUND_COLOR = "-fx-background-color:#b3471144;";
     private static final String NO_BACKGROUND_COLOR = "-fx-background-color:none;";
 

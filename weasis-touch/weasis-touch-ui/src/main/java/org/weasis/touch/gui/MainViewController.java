@@ -24,6 +24,7 @@ import javax.sound.sampled.AudioFormat.Encoding;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 
+import javafx.application.Platform;
 import javafx.scene.control.MenuItem;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
@@ -119,6 +120,7 @@ public class MainViewController {
     private Scene scene;
     public BooleanProperty lockedProperty = new SimpleBooleanProperty(false);
     public BooleanProperty blurProperty = new SimpleBooleanProperty(false);
+    private Node confirmation;
 
     ThumbnailViewerController thumbnailViewerController;
     private ScrollPane sp;
@@ -138,6 +140,8 @@ public class MainViewController {
     private MenuItem btnOpenFile;
     @FXML
     private MenuItem btnSettings;
+    @FXML
+    private MenuItem btnExit;
 
     private Preferences prefs;
     private MenuController menu;
@@ -206,7 +210,36 @@ public class MainViewController {
         btnSettings.setOnAction(event -> {
             //ssettings();
         });
+
+        btnExit.setOnAction(event -> {
+            exit();
+        });
     }
+
+    public Scene getScene(){
+        return scene;
+    }
+
+    private void exit() {
+            Platform.exit();
+            System.exit(0);
+    }
+
+    public void exit(Boolean res) {
+        if (res) {
+            Platform.exit();
+            System.exit(0);
+        } else {
+            hideConfirmation();
+        }
+    }
+
+
+    public void hideConfirmation() {
+        blurProperty.setValue(false);
+        this.rootPane.getChildren().remove(confirmation);
+    }
+
 
     private void settings() {
 

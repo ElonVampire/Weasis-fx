@@ -51,6 +51,7 @@ public class ConfirmationController {
     private Text text;
 
     private MenuController menuController;
+    private MainViewController mainViewController;
 
     @FXML
     private void initialize() {
@@ -63,10 +64,18 @@ public class ConfirmationController {
         buttonYes.setOnAction(this::handleButtonYes);
     }
 
-    public void setType(Integer type, MenuController menuController) {
+    public void setType(Integer type, MenuController menuController, MainViewController mainViewController) {
         this.menuController = menuController;
+        this.mainViewController = mainViewController;
         this.type = type;
-        Scene scene = menuController.menuGroup.getScene();
+
+        Scene scene;
+
+        if (mainViewController==null){
+            scene = menuController.menuGroup.getScene();
+        } else {
+            scene = mainViewController.getScene();
+        }
 
         switch (type) {
             case TYPE_EXIT:
@@ -92,6 +101,7 @@ public class ConfirmationController {
         switch (type) {
             case TYPE_EXIT:
                 menuController.exit(false);
+                mainViewController.exit(false);
                 break;
             case TYPE_RESET:
                 menuController.reset(false);
@@ -104,6 +114,7 @@ public class ConfirmationController {
             switch (type) {
                 case TYPE_EXIT:
                     menuController.exit(false);
+                    mainViewController.exit(false);
                     break;
                 case TYPE_RESET:
                     menuController.reset(false);
@@ -119,6 +130,7 @@ public class ConfirmationController {
                     prefs.putBoolean(WeasisPreferences.ASK_EXIT.name(), false);
                 }
                 menuController.exit(true);
+                mainViewController.exit(true);
                 break;
             case TYPE_RESET:
                 if (remember.isSelected()) {
