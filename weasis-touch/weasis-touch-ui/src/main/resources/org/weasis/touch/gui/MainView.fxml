@@ -28,8 +28,8 @@
                   </Menu>
                   <Menu id="menuHelp" mnemonicParsing="false" text="Aide">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Aide en Ligne" />
-                        <MenuItem mnemonicParsing="false" text="À Propos de Proxymage" />
+                        <MenuItem fx:id="btnHelpOnline" mnemonicParsing="false" text="Aide en Ligne" />
+                        <MenuItem fx:id="btnAbout" mnemonicParsing="false" text="À Propos de Proxymage" />
                      </items>
                   </Menu>
                </menus>

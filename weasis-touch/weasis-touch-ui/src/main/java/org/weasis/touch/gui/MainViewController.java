@@ -15,6 +15,8 @@ package org.weasis.touch.gui;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.List;
 import java.util.prefs.Preferences;
 
@@ -142,6 +144,10 @@ public class MainViewController {
     private MenuItem btnSettings;
     @FXML
     private MenuItem btnExit;
+    @FXML
+    private MenuItem btnHelpOnline;
+    @FXML
+    private MenuItem btnAbout;
 
     private Preferences prefs;
     private MenuController menu;
@@ -213,6 +219,18 @@ public class MainViewController {
 
         btnExit.setOnAction(event -> {
             exit();
+        });
+        btnHelpOnline.setOnAction(event -> {
+            try {
+                Desktop.getDesktop().browse(new URI("http://proxymage.net/Proxymage"));
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            } catch (URISyntaxException e1) {
+                e1.printStackTrace();
+            }
+        });
+        btnAbout.setOnAction(event -> {
+
         });
     }
 
