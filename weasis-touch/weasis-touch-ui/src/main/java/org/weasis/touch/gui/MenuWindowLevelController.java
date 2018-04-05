@@ -229,7 +229,8 @@ public class MenuWindowLevelController {
             }
             for (int c = 0; c < nbColumn; c++) {
                 menuController.contrasteGrid.getColumnConstraints()
-                    .add(new ColumnConstraints(menuController.menu.getColumnConstraints().get(0).getPrefWidth()));
+                        .add(new ColumnConstraints(180/*menuController.menu.getColumnConstraints().get(0).getPrefWidth()*/));
+                //menuController.contrasteGrid.getColumnConstraints().add(new ColumnConstraints(40));
             }
 
             // fill contrasteGrid
