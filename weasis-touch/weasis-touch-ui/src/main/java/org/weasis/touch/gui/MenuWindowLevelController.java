@@ -198,7 +198,7 @@ public class MenuWindowLevelController {
     private PresetWindowLevel presetWL;
     private Boolean flagWindowLevelNewValue = false;
 
-    public static final int MAX_COLUMN = 5;
+    public static final int MAX_COLUMN = 2;
 
     void windowLevel() {
         List<PresetWindowLevel> listWindowLevel =
@@ -229,7 +229,7 @@ public class MenuWindowLevelController {
             }
             for (int c = 0; c < nbColumn; c++) {
                 menuController.contrasteGrid.getColumnConstraints()
-                        .add(new ColumnConstraints(180/*menuController.menu.getColumnConstraints().get(0).getPrefWidth()*/));
+                        .add(new ColumnConstraints(160/*menuController.menu.getColumnConstraints().get(0).getPrefWidth()*/));
                 //menuController.contrasteGrid.getColumnConstraints().add(new ColumnConstraints(40));
             }
 
