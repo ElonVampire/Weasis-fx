@@ -71,7 +71,7 @@ public class OsgiApp extends Application {
         mainStage.setY(bounds.getMinY());
         mainStage.setWidth(bounds.getWidth());
         mainStage.setHeight(bounds.getHeight());
-        // mainStage.setMaximized(true);
+        //mainStage.setMaximized(true);
         Preferences prefs = Preferences.userRoot().node(SettingsController.class.getName());
         if (prefs.getBoolean(WeasisPreferences.FULL_SCREEN.name(),
             (Boolean) WeasisPreferences.FULL_SCREEN.defaultValue())) {

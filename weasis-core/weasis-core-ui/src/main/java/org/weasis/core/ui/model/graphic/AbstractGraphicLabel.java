@@ -216,7 +216,7 @@ public abstract class AbstractGraphicLabel implements GraphicLabel {
             for (String label : labels) {
                 if (StringUtil.hasText(label)) {
                     py += labelHeight;
-                    paintColorFontOutline(g2d, label, px, py, Color.WHITE);
+                    paintColorFontOutline(g2d, label, px, py, Color.BLACK);
                 }
             }
 

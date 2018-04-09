@@ -263,7 +263,7 @@ public class MenuController {
                 .setLayoutY((double) newVal
                     - (menuGroup.getBoundsInLocal().getHeight()
                         - (menuGroup.getBoundsInLocal().getHeight() - menuGroup.getBoundsInLocal().getMaxY()))
-                    - 7 - 850);
+                    - 7 - 875);
         });
     }
 

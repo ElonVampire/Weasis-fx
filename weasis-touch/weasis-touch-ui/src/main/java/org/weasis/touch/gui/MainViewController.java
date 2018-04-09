@@ -317,7 +317,6 @@ public class MainViewController {
             loaderth.setClassLoader(this.getClass().getClassLoader());
             sp = loaderth.load();
             thumbnailViewerController = loaderth.getController();
-
             left.getChildren().add(sp);
             right.getChildren().add(tutorialCanvas);
 
