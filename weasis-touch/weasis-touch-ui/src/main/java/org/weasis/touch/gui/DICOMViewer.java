@@ -68,7 +68,7 @@ public class DICOMViewer extends AnchorPane {
 
         AnchorPane.setTopAnchor(this, 0.0);
         AnchorPane.setLeftAnchor(this, 0.0);
-        AnchorPane.setBottomAnchor(this, 40.0);
+        AnchorPane.setBottomAnchor(this, 30.0);
         AnchorPane.setRightAnchor(this, 0.0);
 
         this.scrollController.setParam(mainCanvas);
