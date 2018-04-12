@@ -115,7 +115,7 @@ public class WeasisWin {
     }
 
     public void createMainPanel() throws Exception {
-        Scene scene = new Scene(rootPaneContainer, Color.WHITE);
+        Scene scene = new Scene(rootPaneContainer, Color.BLACK);
         mainStage.setMinWidth(400);
         mainStage.setMinHeight(400);
 

@@ -5,7 +5,7 @@
 
 <ScrollPane fx:id="thumbnailViewer" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="0.0" pannable="true" style="-fx-background-color: #212121;" stylesheets="@application.css" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.weasis.touch.gui.ThumbnailViewerController">
 	<content>
-	   <VBox fx:id="thumbnailContener" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #212121;">
+	   <VBox fx:id="thumbnailContener" style="-fx-background-color: #212121;">
          <children>
          </children></VBox>
 	</content>          
