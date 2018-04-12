@@ -61,7 +61,7 @@
                   </SplitPane>
                   <BorderPane fx:id="closeThumbnail" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
                      <center>
-                        <SVGPath content="" fill="#b34711" scaleX="3.0" scaleY="3.0" BorderPane.alignment="CENTER" />
+                        <SVGPath content="" fill="#ff6600" scaleX="3.0" scaleY="3.0" BorderPane.alignment="CENTER" />
                      </center>
                   </BorderPane>
                </children>

@@ -183,7 +183,9 @@ public class WeasisWinListener implements MainWindowListener {
         // Register default model
         DefaultDataModel.addPropertyChangeListener(this);
 
+
         final Stage splash = OsgiApp.getSplashScreen(context.getBundleContext());
+
         if (splash == null) {
             Executors.defaultThreadFactory().newThread(() -> {
                 Thread.currentThread().setContextClassLoader(this.getClass().getClassLoader());
