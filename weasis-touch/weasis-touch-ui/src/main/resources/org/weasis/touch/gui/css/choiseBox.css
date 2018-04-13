@@ -5,7 +5,7 @@
 
 /*Focused item background color in the list*/
 .choice-box .menu-item:focused { 
-	-fx-background-color: #b3471144;
+	-fx-background-color: #b34711;
 }
 
 /*Text color of non-focused items in the list*/

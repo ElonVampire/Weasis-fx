@@ -5,6 +5,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -77,9 +78,9 @@ can't see it). In addition, menu will change position with full screen.
                     </left>
                 </BorderPane>
                 <BorderPane fx:id="fullScreen" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-                    <center>
-                        <SVGPath content="M20,8l8,8V8H20z M4,24h8l-8-8V24z M32,28V4H0v24h14v2H8v2h16v-2h-6v-2H32z M2,26V6h28v20H2z" fill="#ff6600" BorderPane.alignment="CENTER" />
-                    </center>
+               <center>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center>
                 </BorderPane>
                 <BorderPane fx:id="settings" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
                     <center>
