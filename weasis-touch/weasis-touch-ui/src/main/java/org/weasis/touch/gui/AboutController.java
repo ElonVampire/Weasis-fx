@@ -22,7 +22,9 @@ import org.weasis.core.api.gui.util.FxUtil;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
-
+/*
+This controller link the URL of 2 websites with the AboutView.fxml file
+ */
 public class AboutController {
     private static final Logger LOGGER = LoggerFactory.getLogger(AboutController.class);
 

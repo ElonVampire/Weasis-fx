@@ -27,7 +27,10 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
-
+/*
+This controller is linked with the ConfirmationView.fxml file,
+it associate an action with all the FXML elements in the fxml file.
+ */
 public class ConfirmationController {
 
     private Preferences prefs;

@@ -22,7 +22,10 @@ import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
-
+/*
+This controller is linked with the GeneralSettingsView.fxml file,
+it controls the settings menu, it includes all the buttons and the languages choice.
+ */
 public class GeneralSettingsController {
 
     @FXML

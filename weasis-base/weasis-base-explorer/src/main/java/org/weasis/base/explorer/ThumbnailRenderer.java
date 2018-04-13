@@ -45,7 +45,7 @@ public class ThumbnailRenderer<E extends MediaElement> extends JPanel implements
     private final JLabel iconLabel = new JLabel("", SwingConstants.CENTER); //$NON-NLS-1$
     private final JLabel iconCheckedLabel = new JLabel((Icon) null);
     private final JLabel descriptionLabel = new JLabel("", SwingConstants.CENTER); //$NON-NLS-1$
-    private static final Color back = new Color(242, 242, 242);
+    private static final Color back = new Color(33, 33, 33);
 
     public ThumbnailRenderer() {
         // Cannot pass a boxLayout directly to super because it has a this reference

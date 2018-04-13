@@ -16,6 +16,9 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
+import javafx.geometry.Insets;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import org.dcm4che3.data.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,8 +41,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.VBox;
 
 public class ThumbnailViewerController {
     private static final Logger LOGGER = LoggerFactory.getLogger(ThumbnailViewerController.class);
@@ -58,6 +59,9 @@ public class ThumbnailViewerController {
     @FXML
     private void initialize() {
         thumbnailViewer.disableProperty().bind(lockedProperty);
+        //thumbnailContener.setBackground(new Background(new BackgroundFill(Color.BLACK, CornerRadii.EMPTY, Insets.EMPTY)));
+        thumbnailContener.setStyle("-fx-background-color:#212121;");
+        thumbnailViewer.setStyle("-fx-background-color:#212121;");
     }
 
     public void setParam(BooleanProperty lockedProperty, Scene scene) {

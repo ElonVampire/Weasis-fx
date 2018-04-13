@@ -78,6 +78,9 @@ public class InfoLayer {
     protected boolean showBottomScale = true;
     protected String name;
 
+    /*
+    This class displays a layer which gives information about the software.
+     */
     public InfoLayer(MainCanvas view2DPane) {
         this.view2DPane = view2DPane;
         this.pixelInfoBound = new Rectangle();
