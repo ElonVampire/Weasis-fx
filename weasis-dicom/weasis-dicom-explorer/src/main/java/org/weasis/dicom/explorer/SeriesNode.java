@@ -39,7 +39,7 @@ public class SeriesNode extends VBox {
 
         Label l = new Label(TagD.getTagValue(thumbnail.getSeries(), Tag.SeriesDescription, String.class));
         l.setFont(font);
-        l.setStyle("-fx-text-fill: white;");
+        l.setStyle("-fx-text-fill: #b5b5b5;");
         l.maxWidthProperty().bind(thumbnail.widthProperty());
         ObservableValueBase<String> observable = new ObservableValueBase<String>() {
 
