@@ -7,7 +7,7 @@
 Rectangle conteners. The one visible in front is the Vbox thumbnailContener.
 -->
 
-<ScrollPane fx:id="thumbnailViewer" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="0.0" pannable="true" style="-fx-background-color: #212121;" stylesheets="@application.css" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.weasis.touch.gui.ThumbnailViewerController">
+<ScrollPane fx:id="thumbnailViewer" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="0.0" pannable="true" style="-fx-background-color: #212121;" stylesheets="@css/application.css" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.weasis.touch.gui.ThumbnailViewerController">
 	<content>
 	   <VBox fx:id="thumbnailContener" style="-fx-background-color: #212121;">
          <children>

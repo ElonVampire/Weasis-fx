@@ -21,7 +21,7 @@ You find in this file the top menu, the left and right split pane.
    <children>
       <BorderPane>
          <top> <!-- Top menu that we implemented. See top-nav.css -->
-            <MenuBar style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" stylesheets="@top-nav.css" BorderPane.alignment="CENTER">
+            <MenuBar style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" stylesheets="@css/top-nav.css" BorderPane.alignment="CENTER">
                <menus>
                   <Menu id="menuFile" mnemonicParsing="false" text="Fichier">
                      <items>
@@ -42,7 +42,7 @@ You find in this file the top menu, the left and right split pane.
          <center>
             <AnchorPane fx:id="mainViewPane" BorderPane.alignment="CENTER">
                <children>
-                  <SplitPane fx:id="mainSplitPane" stylesheets="@splitpane.css" dividerPositions="0.5" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <SplitPane fx:id="mainSplitPane" stylesheets="@css/splitpane.css" dividerPositions="0.5" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <items>
                         <!-- Left part of the main screen. ThumbnailViewer with DICOM series. -->
                         <!--maxHeight="1.7976931348623157E308" minHeight="-Infinity"-->
@@ -51,7 +51,7 @@ You find in this file the top menu, the left and right split pane.
                               <children>
                                  <ImageView fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                       <Image url="@logo_proxymage.png" />
+                                       <Image url="@img/logo_proxymage.png" />
                                     </image>
                                     <VBox.margin>
                                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />

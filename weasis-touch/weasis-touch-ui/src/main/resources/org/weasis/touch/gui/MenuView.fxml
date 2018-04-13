@@ -103,7 +103,7 @@ can't see it). In addition, menu will change position with full screen.
         </BorderPane>
         <BorderPane fx:id="unlockProgressBorder">
             <center>
-                <ProgressIndicator fx:id="unlockProgress" progress="0.0" style="-fx-progress-color: #b34711;" stylesheets="@progress.css" visible="false" BorderPane.alignment="CENTER" />
+                <ProgressIndicator fx:id="unlockProgress" progress="0.0" style="-fx-progress-color: #b34711;" stylesheets="@css/progress.css" visible="false" BorderPane.alignment="CENTER" />
             </center>
         </BorderPane>
         <GridPane fx:id="contrasteGrid" hgap="10.0" layoutY="-70.0" style="-fx-border-color: black; -fx-background-color: #EAEAEAF0;" vgap="10.0">
