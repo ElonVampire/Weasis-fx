@@ -25,7 +25,9 @@ import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.StrokeLineCap;
-
+/*
+Class that permits the user to draw lines to mesure distance between two points.
+ */
 public class LineMesure implements Mesure {
 
     private Color color;
