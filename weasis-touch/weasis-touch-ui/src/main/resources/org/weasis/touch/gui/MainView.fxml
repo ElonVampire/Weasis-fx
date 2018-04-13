@@ -13,11 +13,15 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
 
+<!-- Main window of Weasis.
+You find in this file the top menu, the left and right split pane.
+-->
+
 <StackPane fx:id="mainPane" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.weasis.touch.gui.MainViewController">
    <children>
       <BorderPane>
-         <top>
-            <MenuBar style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" stylesheets="@top-nav.css" BorderPane.alignment="CENTER">
+         <top> <!-- Top menu that we implemented. See top-nav.css -->
+            <MenuBar style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" stylesheets="@css/top-nav.css" BorderPane.alignment="CENTER">
                <menus>
                   <Menu id="menuFile" mnemonicParsing="false" text="Fichier">
                      <items>
@@ -38,15 +42,16 @@
          <center>
             <AnchorPane fx:id="mainViewPane" BorderPane.alignment="CENTER">
                <children>
-                  <SplitPane fx:id="mainSplitPane" stylesheets="@splitpane.css" dividerPositions="0.5" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <SplitPane fx:id="mainSplitPane" stylesheets="@css/splitpane.css" dividerPositions="0.5" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <items>
+                        <!-- Left part of the main screen. ThumbnailViewer with DICOM series. -->
                         <!--maxHeight="1.7976931348623157E308" minHeight="-Infinity"-->
                         <AnchorPane fx:id="left" maxWidth="240.0"  minWidth="240.0" maxHeight="1.7976931348623157E308" minHeight="-Infinity" style="-fx-background-color: #212121;" SplitPane.resizableWithParent="true">
                            <VBox prefHeight="400.0" BorderPane.alignment="CENTER">
                               <children>
                                  <ImageView fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                       <Image url="@logo_proxymage.png" />
+                                       <Image url="@img/logo_proxymage.png" />
                                     </image>
                                     <VBox.margin>
                                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
@@ -57,9 +62,11 @@
                            <padding>
                               <Insets top="70" />
                            </padding></AnchorPane>
+                        <!-- Right part of the main screen. Black window. -->
                         <AnchorPane fx:id="right" style="-fx-background-color: black;" SplitPane.resizableWithParent="true" />
                      </items>
                   </SplitPane>
+                  <!-- CloseThumbnail is a button that we removed because we decided to always display the left splitpane. -->
                   <BorderPane fx:id="closeThumbnail" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
                      <center>
                         <SVGPath content="" fill="#ff6600" scaleX="3.0" scaleY="3.0" BorderPane.alignment="CENTER" />

@@ -5,9 +5,10 @@
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.VBox?>
 
+<!-- Title of DICOM series (see scene builder). -->
 <Group fx:id="patientGroup" style="-fx-text-fill: white;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.weasis.touch.gui.PatientController">
    <children>
-      <TitledPane fx:id="title" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #212121;" stylesheets="@titledpane.css" text="untitled" textFill="WHITE">
+      <TitledPane fx:id="title" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #212121;" stylesheets="@css/titledpane.css" text="untitled" textFill="WHITE">
          <content>
             <VBox fx:id="patientImageVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" style="-fx-background-color: #212121;-fx-text-fill: white;">
                <padding>

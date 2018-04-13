@@ -882,6 +882,7 @@ public class TagD extends TagW {
             /*
              * In DICOM “family name^given name^middle name^prefix^suffix”
              *
+             *
              * In HL7 “family name^given name^middle name^suffix^prefix^ degree”
              */
             String[] vals = names[k].split("\\^"); //$NON-NLS-1$

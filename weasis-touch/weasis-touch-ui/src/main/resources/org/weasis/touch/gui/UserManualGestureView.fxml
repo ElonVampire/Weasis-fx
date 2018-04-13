@@ -230,7 +230,7 @@
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@scroll.jpg" />
+                              <Image url="@img/scroll.jpg" />
                            </image>
                         </ImageView>
                         <BorderPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="111.0" prefWidth="289.0">

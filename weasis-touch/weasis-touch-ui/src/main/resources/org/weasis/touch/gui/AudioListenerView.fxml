@@ -13,13 +13,13 @@
    <top>
       <HBox fx:id="controlPane1" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" BorderPane.alignment="CENTER">
          <children>
-            <JFXSlider fx:id="timeSlider" blockIncrement="1.0" indicatorPosition="RIGHT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="0.0" stylesheets="@sliderTime.css" value="-1.0" HBox.hgrow="ALWAYS">
+            <JFXSlider fx:id="timeSlider" blockIncrement="1.0" indicatorPosition="RIGHT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="0.0" stylesheets="@css/sliderTime.css" value="-1.0" HBox.hgrow="ALWAYS">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></JFXSlider>
             <Label fx:id="playTime" text="Label" textFill="WHITE" />
             <Label text="Vol" textFill="WHITE" />
-            <JFXSlider fx:id="volumeSlider" blockIncrement="1.0" indicatorPosition="RIGHT" minWidth="0.0" stylesheets="@slider.css" value="100.0">
+            <JFXSlider fx:id="volumeSlider" blockIncrement="1.0" indicatorPosition="RIGHT" minWidth="0.0" stylesheets="@css/slider.css" value="100.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></JFXSlider>

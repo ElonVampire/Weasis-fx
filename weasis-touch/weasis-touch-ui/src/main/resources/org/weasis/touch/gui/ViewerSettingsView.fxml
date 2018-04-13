@@ -14,7 +14,7 @@
 
 <AnchorPane fx:id="viewerSettings" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="466.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.weasis.touch.gui.ViewerSettingsController">
    <children>
-      <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="466.0" style="-fx-focus-color: transparent; -fx-background-color: transparent;" stylesheets="@application.css">
+      <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="466.0" style="-fx-focus-color: transparent; -fx-background-color: transparent;" stylesheets="@css/application.css">
          <content>
             <VBox prefWidth="466.0" spacing="10.0" style="-fx-background-color: transparent;">
                <padding>
@@ -57,7 +57,7 @@
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%WeasisTouchSettingsViewer.window" wrappingWidth="90.0" BorderPane.alignment="CENTER" />
                            </center>
                         </BorderPane>
-                        <JFXSlider fx:id="windowSensitivity" min="1.0" prefHeight="25.0" prefWidth="402.0" stylesheets="@slider.css" />
+                        <JFXSlider fx:id="windowSensitivity" min="1.0" prefHeight="25.0" prefWidth="402.0" stylesheets="@css/slider.css" />
                      </children>
                   </HBox>
                   <HBox prefHeight="25.0" prefWidth="448.0">
@@ -67,7 +67,7 @@
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%WeasisTouchSettingsViewer.level" wrappingWidth="90.0" BorderPane.alignment="CENTER" />
                            </center>
                         </BorderPane>
-                        <JFXSlider fx:id="levelSensitivity" min="1.0" prefHeight="25.0" prefWidth="402.0" stylesheets="@slider.css" />
+                        <JFXSlider fx:id="levelSensitivity" min="1.0" prefHeight="25.0" prefWidth="402.0" stylesheets="@css/slider.css" />
                      </children>
                   </HBox>
                   <Separator prefWidth="200.0" />

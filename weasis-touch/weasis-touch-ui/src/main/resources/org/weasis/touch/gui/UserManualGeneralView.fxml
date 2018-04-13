@@ -32,7 +32,7 @@
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@loadImage.JPG" />
+                              <Image url="@img/loadImage.JPG" />
                            </image>
                         </ImageView>
                         <BorderPane prefHeight="200.0" prefWidth="200.0">
@@ -63,7 +63,7 @@
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@hide.JPG" />
+                              <Image url="@img/hide.JPG" />
                            </image>
                         </ImageView>
                         <BorderPane prefHeight="200.0" prefWidth="200.0">
@@ -94,7 +94,7 @@
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@menu.JPG" />
+                              <Image url="@img/menu.JPG" />
                            </image>
                         </ImageView>
                         <BorderPane prefHeight="200.0" prefWidth="200.0">
