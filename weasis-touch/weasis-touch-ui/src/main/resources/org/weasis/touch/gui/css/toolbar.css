@@ -19,13 +19,13 @@ ToolBar {
 }
 
 #toggleBtnPan {  
-    -fx-graphic: url('../img/ic_3d_rotation_white_24dp_1x.png');
+    -fx-graphic: url('');
 }
 
 #toggleBtnRotate {  
-    -fx-graphic: url('../img/ic_3d_rotation_white_24dp_1x.png');
+    -fx-graphic: url('');
 }
 
 #toggleBtnZoom {  
-    -fx-graphic: url('../img/ic_3d_rotation_white_24dp_1x.png');
+    -fx-graphic: url('');
 }
