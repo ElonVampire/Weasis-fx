@@ -21,6 +21,9 @@ import javafx.scene.input.TouchEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.util.Duration;
 
+/*
+Contains the functions that permit to make mathematics operations of all the measures on the scans.
+ */
 public class MenuToolsControlleur {
 
     // Style for menu
