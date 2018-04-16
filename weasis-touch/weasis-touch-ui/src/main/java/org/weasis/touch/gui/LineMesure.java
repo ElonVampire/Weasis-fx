@@ -45,6 +45,10 @@ public class LineMesure implements Mesure {
 
     BooleanProperty editModeProperty = new SimpleBooleanProperty(false);
 
+    /*
+    Constructor of the class
+     */
+
     public LineMesure(Integer scroll, Color color, Double pixelSize, Unit unit, MainCanvas mainCanvas) {
         point2DList = new ArrayList<>();
         this.scroll = scroll;
