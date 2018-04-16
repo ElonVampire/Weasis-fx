@@ -23,33 +23,33 @@ can't see it). In addition, menu will change position with full screen.
 <Group fx:id="menuGroup" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.weasis.touch.gui.MenuController">
     <children>
         <!-- Not permanent buttons -->
-        <BorderPane fx:id="trashMeasure" layoutX="559.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="70.0">
+        <BorderPane fx:id="trashMeasure" layoutX="470.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="70.0">
             <center>
-                <SVGPath fx:id="trashMeasureSVG" content="M89.4,100l26.2,347.9c2.5,32.5,29.6,58.1,60.7,58.1h159.3c31.1,0,58.2-25.6,60.7-58.1L422.6,100H89.4z M190.1,460.8   c0.3,7.1-5.1,12.7-12,12.7s-12.7-5.7-13.1-12.7l-14.6-296.6c-0.5-9.6,5.7-17.4,13.8-17.4s14.9,7.8,15.3,17.4L190.1,460.8z    M268.5,460.8c0,7.1-5.7,12.7-12.5,12.7s-12.5-5.7-12.5-12.7l-2-296.6c-0.1-9.6,6.4-17.4,14.5-17.4c8.1,0,14.6,7.8,14.5,17.4   L268.5,460.8z M346.9,460.8c-0.3,7.1-6.2,12.7-13.1,12.7s-12.2-5.7-12-12.7l10.6-296.6c0.3-9.6,7.2-17.4,15.3-17.4   c8.1,0,14.3,7.8,13.8,17.4L346.9,460.8z M445.3,82.8H66.7v0c-1.8-21.1,10.7-38.4,27.9-38.4h322.9C434.6,44.4,447.1,61.8,445.3,82.8L445.3,82.8z M324.3,58.6H187.7l-0.2-7.8C186.7,26.3,202.1,6,221.9,6h68.3c19.7,0,35.1,20.3,34.4,44.7L324.3,58.6z" fill="#ff6600" scaleX="0.09" scaleY="0.09" />
+                <SVGPath fx:id="trashMeasureSVG" content="M89.4,100l26.2,347.9c2.5,32.5,29.6,58.1,60.7,58.1h159.3c31.1,0,58.2-25.6,60.7-58.1L422.6,100H89.4z M190.1,460.8   c0.3,7.1-5.1,12.7-12,12.7s-12.7-5.7-13.1-12.7l-14.6-296.6c-0.5-9.6,5.7-17.4,13.8-17.4s14.9,7.8,15.3,17.4L190.1,460.8z    M268.5,460.8c0,7.1-5.7,12.7-12.5,12.7s-12.5-5.7-12.5-12.7l-2-296.6c-0.1-9.6,6.4-17.4,14.5-17.4c8.1,0,14.6,7.8,14.5,17.4   L268.5,460.8z M346.9,460.8c-0.3,7.1-6.2,12.7-13.1,12.7s-12.2-5.7-12-12.7l10.6-296.6c0.3-9.6,7.2-17.4,15.3-17.4   c8.1,0,14.3,7.8,13.8,17.4L346.9,460.8z M445.3,82.8H66.7v0c-1.8-21.1,10.7-38.4,27.9-38.4h322.9C434.6,44.4,447.1,61.8,445.3,82.8L445.3,82.8z M324.3,58.6H187.7l-0.2-7.8C186.7,26.3,202.1,6,221.9,6h68.3c19.7,0,35.1,20.3,34.4,44.7L324.3,58.6z" fill="#ff6600" scaleX="0.075" scaleY="0.07" />
             </center>
         </BorderPane>
-        <BorderPane fx:id="exitMeasure" layoutX="489.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="70.0">
+        <BorderPane fx:id="exitMeasure" layoutX="410.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="70.0">
             <center>
-                <SVGPath fx:id="exitMeasureSVG" content="M7.1,12.6 L8.5,14 L13.5,9 L8.5,4 L7.1,5.4 L9.7,8 L0,8 L0,10 L9.7,10 L7.1,12.6 L7.1,12.6 Z M16,0 L2,0 C0.9,0 0,0.9 0,2 L0,6 L2,6 L2,2 L16,2 L16,16 L2,16 L2,12 L0,12 L0,16 C0,17.1 0.9,18 2,18 L16,18 C17.1,18 18,17.1 18,16 L18,2 C18,0.9 17.1,0 16,0 L16,0 Z" fill="#ff6600" scaleX="2.1" scaleY="2.1" BorderPane.alignment="CENTER" />
+                <SVGPath fx:id="exitMeasureSVG" content="M7.1,12.6 L8.5,14 L13.5,9 L8.5,4 L7.1,5.4 L9.7,8 L0,8 L0,10 L9.7,10 L7.1,12.6 L7.1,12.6 Z M16,0 L2,0 C0.9,0 0,0.9 0,2 L0,6 L2,6 L2,2 L16,2 L16,16 L2,16 L2,12 L0,12 L0,16 C0,17.1 0.9,18 2,18 L16,18 C17.1,18 18,17.1 18,16 L18,2 C18,0.9 17.1,0 16,0 L16,0 Z" fill="#ff6600" scaleX="1.8" scaleY="1.8" BorderPane.alignment="CENTER" />
             </center>
         </BorderPane>
         <!-- Menu GridPane 7x2 -->
         <GridPane fx:id="menu" hgap="5.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" vgap="10.0">
             <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <BorderPane fx:id="reset" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="80.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                <BorderPane fx:id="reset" prefHeight="50.0" prefWidth="80.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <center>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
                      <image>
@@ -58,9 +58,9 @@ can't see it). In addition, menu will change position with full screen.
                   </ImageView>
                </center>
                 </BorderPane>
-                <BorderPane fx:id="lock" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="80.0" scaleX="0.5" scaleY="0.3" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                <BorderPane fx:id="lock" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="70.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                     <center>
-                        <SVGPath content="M131.889,150.061v63.597h-27.256  c-20.079,0-36.343,16.263-36.343,36.342v181.711c0,20.078,16.264,36.34,36.343,36.34h290.734c20.078,0,36.345-16.262,36.345-36.34  V250c0-20.079-16.267-36.342-36.345-36.342h-27.254v-63.597c0-65.232-52.882-118.111-118.112-118.111  S131.889,84.828,131.889,150.061z M177.317,213.658v-63.597c0-40.157,32.525-72.685,72.683-72.685  c40.158,0,72.685,32.528,72.685,72.685v63.597H177.317z M213.658,313.599c0-20.078,16.263-36.341,36.342-36.341  s36.341,16.263,36.341,36.341c0,12.812-6.634,24.079-16.625,30.529c0,0,3.55,21.446,7.542,46.699  c0,7.538-6.087,13.625-13.629,13.625h-27.258c-7.541,0-13.627-6.087-13.627-13.625l7.542-46.699  C220.294,337.678,213.658,326.41,213.658,313.599z" fill="#ff6600" scaleX="0.1" scaleY="0.15" scaleZ="0.0" BorderPane.alignment="CENTER" />
+                        <SVGPath content="M131.889,150.061v63.597h-27.256  c-20.079,0-36.343,16.263-36.343,36.342v181.711c0,20.078,16.264,36.34,36.343,36.34h290.734c20.078,0,36.345-16.262,36.345-36.34  V250c0-20.079-16.267-36.342-36.345-36.342h-27.254v-63.597c0-65.232-52.882-118.111-118.112-118.111  S131.889,84.828,131.889,150.061z M177.317,213.658v-63.597c0-40.157,32.525-72.685,72.683-72.685  c40.158,0,72.685,32.528,72.685,72.685v63.597H177.317z M213.658,313.599c0-20.078,16.263-36.341,36.342-36.341  s36.341,16.263,36.341,36.341c0,12.812-6.634,24.079-16.625,30.529c0,0,3.55,21.446,7.542,46.699  c0,7.538-6.087,13.625-13.629,13.625h-27.258c-7.541,0-13.627-6.087-13.627-13.625l7.542-46.699  C220.294,337.678,213.658,326.41,213.658,313.599z" fill="#ff6600" scaleX="0.06" scaleY="0.055" scaleZ="0.0" BorderPane.alignment="CENTER" />
                     </center>
                 </BorderPane>
                 <BorderPane fx:id="contraste" GridPane.columnIndex="5" GridPane.rowIndex="1">
@@ -113,9 +113,9 @@ can't see it). In addition, menu will change position with full screen.
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
             </padding>
         </GridPane>
-        <BorderPane fx:id="unlockBorder" layoutX="630.0" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="70.0">
+        <BorderPane fx:id="unlockBorder" layoutX="530.0" layoutY="60.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="70.0">
             <center>
-                <SVGPath fx:id="unlock" content="M131.889,150.061v63.597h-27.256  c-20.079,0-36.343,16.263-36.343,36.342v181.711c0,20.078,16.264,36.34,36.343,36.34h290.734c20.078,0,36.345-16.262,36.345-36.34  V250c0-20.079-16.267-36.342-36.345-36.342h-27.254v-63.597c0-65.232-52.882-118.111-118.112-118.111  S131.889,84.828,131.889,150.061z M177.317,213.658v-63.597c0-40.157,32.525-72.685,72.683-72.685  c40.158,0,72.685,32.528,72.685,72.685v63.597H177.317z M213.658,313.599c0-20.078,16.263-36.341,36.342-36.341  s36.341,16.263,36.341,36.341c0,12.812-6.634,24.079-16.625,30.529c0,0,3.55,21.446,7.542,46.699  c0,7.538-6.087,13.625-13.629,13.625h-27.258c-7.541,0-13.627-6.087-13.627-13.625l7.542-46.699  C220.294,337.678,213.658,326.41,213.658,313.599z" fill="#ff6600" scaleX="0.11" scaleY="0.11" />
+                <SVGPath fx:id="unlock" content="M131.889,150.061v63.597h-27.256  c-20.079,0-36.343,16.263-36.343,36.342v181.711c0,20.078,16.264,36.34,36.343,36.34h290.734c20.078,0,36.345-16.262,36.345-36.34  V250c0-20.079-16.267-36.342-36.345-36.342h-27.254v-63.597c0-65.232-52.882-118.111-118.112-118.111  S131.889,84.828,131.889,150.061z M177.317,213.658v-63.597c0-40.157,32.525-72.685,72.683-72.685  c40.158,0,72.685,32.528,72.685,72.685v63.597H177.317z M213.658,313.599c0-20.078,16.263-36.341,36.342-36.341  s36.341,16.263,36.341,36.341c0,12.812-6.634,24.079-16.625,30.529c0,0,3.55,21.446,7.542,46.699  c0,7.538-6.087,13.625-13.629,13.625h-27.258c-7.541,0-13.627-6.087-13.627-13.625l7.542-46.699  C220.294,337.678,213.658,326.41,213.658,313.599z" fill="#ff6600" scaleX="0.09" scaleY="0.09" />
             </center>
         </BorderPane>
         <BorderPane fx:id="unlockProgressBorder">
@@ -148,11 +148,11 @@ can't see it). In addition, menu will change position with full screen.
         <!-- Measure Tools -->
         <GridPane fx:id="toolsGrid" hgap="10.0" layoutY="-67.0" style="-fx-border-color: black; -fx-background-color: #EAEAEAF0;" vgap="10.0">
             <columnConstraints>
-                <ColumnConstraints maxWidth="-Infinity" minWidth="10.0" prefWidth="125.0" />
-                <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="125.0" />
-                <ColumnConstraints maxWidth="-Infinity" minWidth="10.0" prefWidth="125.0" />
-                <ColumnConstraints maxWidth="-Infinity" minWidth="10.0" prefWidth="125.0" />
-                <ColumnConstraints maxWidth="-Infinity" minWidth="10.0" prefWidth="125.0" />
+                <ColumnConstraints maxWidth="-Infinity" minWidth="10.0" prefWidth="110.0" />
+                <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="110.0" />
+                <ColumnConstraints maxWidth="-Infinity" minWidth="10.0" prefWidth="110.0" />
+                <ColumnConstraints maxWidth="-Infinity" minWidth="10.0" prefWidth="110.0" />
+                <ColumnConstraints maxWidth="-Infinity" minWidth="10.0" prefWidth="110.0" />
             </columnConstraints>
             <padding>
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

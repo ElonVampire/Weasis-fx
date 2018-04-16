@@ -223,7 +223,7 @@ public class MenuToolsControlleur {
                 menuController.toolsGrid.setVisible(true);
 
                 menuController.toolsGrid.setLayoutY(25);
-                menuController.toolsGrid.setLayoutX(650);
+                menuController.toolsGrid.setLayoutX(550);
                 ftToolsShow.playFromStart();
             }
         } else {
