@@ -383,6 +383,7 @@ public class MenuController {
                     case FULL_SCREEN:
                         close();
                         break;
+
                     case OPEN_FILE:
                         ftMenuHide.playFrom(Duration.millis(250));
                 }

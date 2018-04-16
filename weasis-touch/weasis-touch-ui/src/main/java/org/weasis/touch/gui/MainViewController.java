@@ -214,7 +214,7 @@ public class MainViewController {
         });
 
         btnSettings.setOnAction(event -> {
-            //ssettings();
+            //settings();
         });
 
         btnExit.setOnAction(event -> {
@@ -258,7 +258,7 @@ public class MainViewController {
         this.rootPane.getChildren().remove(confirmation);
     }
 
-
+    /*
     private void settings() {
 
         blurProperty.setValue(true);
@@ -283,7 +283,7 @@ public class MainViewController {
         blurProperty.setValue(false);
         this.rootPane.getChildren().remove(setting);
     }
-
+    */
 
     private void openFile() {
         DirectoryChooser directoryChooser = new DirectoryChooser();
