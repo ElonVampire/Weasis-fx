@@ -20,7 +20,7 @@ You find in this file the top menu, the left and right split pane.
 <StackPane fx:id="mainPane" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.weasis.touch.gui.MainViewController">
    <children>
       <BorderPane>
-         <top> <!-- Top menu that we implemented. See top-nav.css -->
+         <top> <!-- Top navigation bar that we implemented. See top-nav.css -->
             <MenuBar style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" stylesheets="@css/top-nav.css" BorderPane.alignment="CENTER">
                <menus>
                   <Menu id="menuFile" mnemonicParsing="false" text="Fichier">
